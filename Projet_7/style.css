@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-style: 14px;
+}
+
+.bloc_page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 100px 15px 100px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main */
+#logo {
+    color: rgb(207, 78, 32);
+}
+
+h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: rgb(207, 78, 32);
+    text-align: center;
+}
+
+/* Search bar */
+#search {
+    margin-top: 15px;
+    height: 55px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    padding-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(179, 179, 179);
+    font-weight: 300;
+}
+
+#search_icon {
+    position: absolute;
+    top: 137px;
+    right: 110px;
+}
+
+/* Select buttons */
+
+.buttons_container {
+    margin-top: 25px;
+}
+
+.select_buttons {
+    height: 60px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-size: 16px;
+    color: white;
+    text-align: start;
+    padding-left: 15px;
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+}
+
+.arrow_down {
+    transform: rotate(45deg);
+}
+
+.arrow_first_button {
+    right: -25px;
+}
+
+.arrow_second_button {
+    right: -39px;
+}
+
+.arrow_third_button {
+    right: -32px;
+}
+
+#ingredients {
+    background-color: rgb(40, 133, 255);
+}
+
+#appareils {
+    background-color: rgb(53, 218, 152);
+}
+
+#ustensils {
+    background-color: rgba(255, 87, 75, 0.897);
+}
+
+/* Section */
+
+.recipe_container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.recipe_card {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    width: 31%;
+    border: 1px solid red;
+}
+
+.recipe_card a *:not(img) {
+    padding: 0px 5px 5px 5px;
+}
+
+.recipe_image {
+    background-color: grey;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+}

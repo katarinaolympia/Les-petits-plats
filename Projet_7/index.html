@@ -4,8 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="style.css">
         <script
         src="https://kit.fontawesome.com/7f6f7e9ee0.js"
         crossorigin="anonymous"
@@ -14,28 +13,29 @@
     </head>
 
     <body>
+        <div class="bloc_page">
         <header>
             <h1>Les petits plats</h1>
         </header>
 
         <main>
-            <div class="search_bar">
+            <div id="search_bar">
                 <input type="search" id="search" name="recipe_search" placeholder="Rechercher une recette" type="text">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"/></svg>
+                <svg id="search_icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"/></svg>
             </div>
-            <div class="select_buttons">
-                <select>Ingrédients<span class="arrow arrow_down"></span><button>
-                <select>Appareil<span class="arrow arrow_down"></span></select>
-                <select>Ustensils<span class="arrow arrow_down"></span></select>
+            <div class="buttons_container">
+                <button class="select_buttons" id="ingredients">Ingrédients<span class="arrow arrow_first_button arrow_down"></span></button>
+                <button class="select_buttons" id="appareils">Appareils<span class="arrow arrow_second_button arrow_down"></span></button>
+                <button class="select_buttons" id="ustensils">Ustensiles<span class="arrow arrow_third_button arrow_down"></span></button>
             </div>
 
             <section class="recipe_container">
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -55,10 +55,10 @@
 
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -78,10 +78,10 @@
 
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -101,10 +101,10 @@
 
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -124,10 +124,10 @@
 
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -147,10 +147,10 @@
 
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -170,10 +170,10 @@
 
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -193,10 +193,10 @@
 
                 <div class="recipe_card">
                     <a href="">
-                        <img alt="">
+                        <img class="recipe_image" src="" alt="">
                         <h2>Limonade de coco</h2>
                         <div class="title_side">
-                            <i class="fa-light fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             <span>6O min</span>
                         </div>
                         <div class="recipe">
@@ -215,5 +215,6 @@
                 </div>
             </section>
         </main>
+        </div>
     </body>
 </html>
