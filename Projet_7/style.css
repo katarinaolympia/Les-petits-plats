@@ -131,7 +131,7 @@ h1 {
     display: flex;
     width: 100%;
     border-radius: 5px;
-    width: 31%;
+    width: 380px;
     background-color: #E7E7E7;
 }
 
@@ -158,7 +158,7 @@ h2 {
     position: relative;
     display: inline-block;
     right: -65%;
-    top: -55px;
+    top: -54px;
 }
 
 .clock_icon {
@@ -182,14 +182,19 @@ h2 {
 .ingredients {
     font-weight: 700;
     display: block;
+    border: 1px solid green;
 }
 
 .ingredients_quantities {
     font-weight: 400;
 }
 
+.container_preparation {
+    border: 1px solid red;
+}
+
 .preparation {
-    width: 185px;
+    width: 200px;
     height: 86px;
     font-family: Roboto;
     margin-top: 0px;
