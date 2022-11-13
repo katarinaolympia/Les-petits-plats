@@ -262,6 +262,11 @@ h2 {
     font-size: 18px;
     margin-left: 10px;
     font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: wrap;
+    width: 220px;
+    line-height: 1em;
 }
 
 .title_aside {
@@ -291,7 +296,7 @@ h2 {
 .ingredients {
     font-weight: 700;
     display: block;
-    width: 130%;
+    width: 120%;
 }
 
 .ingredients_quantities {
