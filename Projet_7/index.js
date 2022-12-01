@@ -1,4 +1,3 @@
-displayRecipes(recipes)
 getIngredients(recipes)
 // displayIngredients(recipes)
 

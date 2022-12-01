@@ -48,22 +48,52 @@
                     </button>
             </div>
 
-            <div class="buttons_container">
-                <button class="select_buttons" id="ingredients">Ingrédients<span class="arrow"><svg class="arrow" id="arrow_first" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
-                    </svg></span>
-                    </button>
-                <button class="select_buttons " id="appareils">Appareils<span class="arrow"><svg class="arrow" id="arrow_second" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
-                    </svg></span>
-                    </button>
-                <button class="select_buttons" id="ustensils">Ustensiles<span class="arrow"><svg class="arrow" id="arrow_third" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
-                    </svg></span>
-                    </button>
-            </div>
+            <div class="dropdown_container">
 
-            <div class="dropdown_search_container">
+                <div class="dropdown">
+                    <div class="select" id="select_ingredients">
+                        <button class="dropdown_buttons" id="ingredients">Ingrédients</button>
+                        <span class="arrow"><svg class="arrow" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
+                        </svg></span>
+                    </div>
+                    <ul class="menu" id="menu_ingredients">
+                        <!-- <li>Ingredients n°1</li>
+                        <li>Ingredients n°1</li>
+                        <li>Ingredients n°1</li> -->
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <div class="select" id="select_appareils">
+                        <button class="dropdown_buttons" id="appareils">Appareils</button>
+                        <span class="arrow"><svg class="arrow" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
+                            </svg></span>
+                    </div>
+                    <ul class="menu" id="menu_appareils">
+                        <li>Appareil n°1</li>
+                        <li>Appareil n°1</li>
+                        <li>Appareil n°1</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <div class="select" id="select_ustensils">
+                        <button class="dropdown_buttons" id="ustensils">Ustensils</button>
+                        <span class="arrow"><svg class="arrow" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
+                         </svg></span>
+                    </div>
+                    <ul class="menu" id="menu_ustensils">
+                        <li>Ustensils n°1</li>
+                        <li>Ustensils n°1</li>
+                        <li>Ustensils n°1</li>
+                    </ul>
+                </div>
+            </div> 
+
+            <!-- <div class="dropdown_search_container">
                     <input type="search" autocomplete="on" class="dropdown_search hidden" id="dropdown_ingredients"><span><svg class="arrow_dropdown" id="arrow_dropdown_ingredients" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
                         </svg></span></input>
@@ -73,7 +103,7 @@
                     <input type="search" autocomplete="on" class="dropdown_search hidden" id="dropdown_ustensils"><span><svg class="arrow_dropdown hidden" id="arrow_dropdown_ustensils" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.12 0.453369L8 6.56004L1.88 0.453369L0 2.33337L8 10.3334L16 2.33337L14.12 0.453369Z" fill="white"/>
                         </svg></span></input>
-                </div>
+                </div> -->
 
             <section class="recipe_container">
                 <!-- <div class="recipe_card">
@@ -101,184 +131,16 @@
                     </a>
                 </div>
 
-                <div class="recipe_card">
-                    <a href="">
-                        <img class="recipe_image" src="" alt="">
-                        <h2>Limonade de coco</h2>
-                        <span class="title_aside">
-                            <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"/>
-                                </svg>
-                            <span class="recipe_time">6O min</span>
-                        </span>
-                        <div class="recipe">
-                            <span class="container_ingredients">
-                                <span class="ingredients">Lait de coco:<span class="ingredients_quantities"> 400ml</span></span>
-                                <span class="ingredients">Jus de citron:<span class="ingredients_quantities"> 2</span></span>
-                                <span class="ingredients">Crème de coco:<span class="ingredients_quantities"> 4 cuillères</span></span>
-                                <span class="ingredients">Sucre:<span class="ingredients_quantities"> 20g</span></span>
-                                <span class="ingredients">Glaçons:<span class="ingredients_quantities"> 2</span></span>
-                            </span>
-                            <span class="container_preparation">
-                                <p class="preparation">Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette. Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette.</p>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="recipe_card">
-                    <a href="">
-                        <img class="recipe_image" src="" alt="">
-                        <h2>Limonade de coco</h2>
-                        <span class="title_aside">
-                            <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"/>
-                                </svg>
-                            <span class="recipe_time">6O min</span>
-                        </span>
-                        <div class="recipe">
-                            <span class="container_ingredients">
-                                <span class="ingredients">Lait de coco:<span class="ingredients_quantities"> 400ml</span></span>
-                                <span class="ingredients">Jus de citron:<span class="ingredients_quantities"> 2</span></span>
-                                <span class="ingredients">Crème de coco:<span class="ingredients_quantities"> 4 cuillères</span></span>
-                                <span class="ingredients">Sucre:<span class="ingredients_quantities"> 20g</span></span>
-                                <span class="ingredients">Glaçons:<span class="ingredients_quantities"> 2</span></span>
-                            </span>
-                            <span class="container_preparation">
-                                <p class="preparation">Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette. Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette.</p>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="recipe_card">
-                    <a href="">
-                        <img class="recipe_image" src="" alt="">
-                        <h2>Limonade de coco</h2>
-                        <span class="title_aside">
-                            <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"/>
-                                </svg>
-                            <span class="recipe_time">6O min</span>
-                        </span>
-                        <div class="recipe">
-                            <span class="container_ingredients">
-                                <span class="ingredients">Lait de coco:<span class="ingredients_quantities"> 400ml</span></span>
-                                <span class="ingredients">Jus de citron:<span class="ingredients_quantities"> 2</span></span>
-                                <span class="ingredients">Crème de coco:<span class="ingredients_quantities"> 4 cuillères</span></span>
-                                <span class="ingredients">Sucre:<span class="ingredients_quantities"> 20g</span></span>
-                                <span class="ingredients">Glaçons:<span class="ingredients_quantities"> 2</span></span>
-                            </span>
-                            <span class="container_preparation">
-                                <p class="preparation">Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette. Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette.</p>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="recipe_card">
-                    <a href="">
-                        <img class="recipe_image" src="" alt="">
-                        <h2>Limonade de coco</h2>
-                        <span class="title_aside">
-                            <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"/>
-                                </svg>
-                            <span class="recipe_time">6O min</span>
-                        </span>
-                        <div class="recipe">
-                            <span class="container_ingredients">
-                                <span class="ingredients">Lait de coco:<span class="ingredients_quantities"> 400ml</span></span>
-                                <span class="ingredients">Jus de citron:<span class="ingredients_quantities"> 2</span></span>
-                                <span class="ingredients">Crème de coco:<span class="ingredients_quantities"> 4 cuillères</span></span>
-                                <span class="ingredients">Sucre:<span class="ingredients_quantities"> 20g</span></span>
-                                <span class="ingredients">Glaçons:<span class="ingredients_quantities"> 2</span></span>
-                            </span>
-                            <span class="container_preparation">
-                                <p class="preparation">Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette. Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette.</p>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="recipe_card">
-                    <a href="">
-                        <img class="recipe_image" src="" alt="">
-                        <h2>Limonade de coco</h2>
-                        <span class="title_aside">
-                            <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"/>
-                                </svg>
-                            <span class="recipe_time">6O min</span>
-                        </span>
-                        <div class="recipe">
-                            <span class="container_ingredients">
-                                <span class="ingredients">Lait de coco:<span class="ingredients_quantities"> 400ml</span></span>
-                                <span class="ingredients">Jus de citron:<span class="ingredients_quantities"> 2</span></span>
-                                <span class="ingredients">Crème de coco:<span class="ingredients_quantities"> 4 cuillères</span></span>
-                                <span class="ingredients">Sucre:<span class="ingredients_quantities"> 20g</span></span>
-                                <span class="ingredients">Glaçons:<span class="ingredients_quantities"> 2</span></span>
-                            </span>
-                            <span class="container_preparation">
-                                <p class="preparation">Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette. Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette.</p>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="recipe_card">
-                    <a href="">
-                        <img class="recipe_image" src="" alt="">
-                        <h2>Limonade de coco</h2>
-                        <span class="title_aside">
-                            <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"/>
-                                </svg>
-                            <span class="recipe_time">6O min</span>
-                        </span>
-                        <div class="recipe">
-                            <span class="container_ingredients">
-                                <span class="ingredients">Lait de coco:<span class="ingredients_quantities"> 400ml</span></span>
-                                <span class="ingredients">Jus de citron:<span class="ingredients_quantities"> 2</span></span>
-                                <span class="ingredients">Crème de coco:<span class="ingredients_quantities"> 4 cuillères</span></span>
-                                <span class="ingredients">Sucre:<span class="ingredients_quantities"> 20g</span></span>
-                                <span class="ingredients">Glaçons:<span class="ingredients_quantities"> 2</span></span>
-                            </span>
-                            <span class="container_preparation">
-                                <p class="preparation">Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette. Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette.</p>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="recipe_card">
-                    <a href="">
-                        <img class="recipe_image" src="" alt="">
-                        <h2>Limonade de coco</h2>
-                        <span class="title_aside">
-                            <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10.5 5H9V11L14.2 14.2L15 12.9L10.5 10.2V5Z" fill="black"/>
-                                </svg>
-                            <span class="recipe_time">6O min</span>
-                        </span>
-                        <div class="recipe">
-                            <span class="container_ingredients">
-                                <span class="ingredients">Lait de coco:<span class="ingredients_quantities"> 400ml</span></span>
-                                <span class="ingredients">Jus de citron:<span class="ingredients_quantities"> 2</span></span>
-                                <span class="ingredients">Crème de coco:<span class="ingredients_quantities"> 4 cuillères</span></span>
-                                <span class="ingredients">Sucre:<span class="ingredients_quantities"> 20g</span></span>
-                                <span class="ingredients">Glaçons:<span class="ingredients_quantities"> 2</span></span>
-                            </span>
-                            <span class="container_preparation">
-                                <p class="preparation">Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette. Découper le thon en dés, mettre dans un plat et recouvir de jus de citron vert(mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins deux heures et continuer à faire la recette.</p>
-                            </span>
-                        </div>
-                    </a>
-                </div> -->
+             -->
             
             </section>
         </main>
         </div>
-        <script src="./index.js"></script>
+
     </body>
+        <script src="./recipes.js"></script>
+        <script src="./index.js"></script>
+        <script src="./displayRecipes.js"></script>
+        <script src="./functionnalProgramming.js"></script>
+        <script src="./normalizeString.js"></script>
 </html>
