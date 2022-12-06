@@ -60,9 +60,9 @@ function searchRecipes(userInput) {
             const jsonObject = result.map(JSON.stringify) // Retourne un tableau avec les valeurs des objets itérables converti en string
             
             const uniqueSet = new Set(jsonObject) // Nouvelle collection de valeurs uniques (suppression des doublons)
-           
+          
             result = Array.from(uniqueSet).map(JSON.parse) // Converti les éléments du set dans un nouveau tableau
-            
+           
             return displayRecipes(result)
         })
 
