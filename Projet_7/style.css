@@ -57,7 +57,7 @@ h1 {
     outline: none;
 }
 
-#search::placeholder {
+#search::placeholder, .dropdown_search::placeholder {
     padding-left: 10px;
     font-family: Lato, sans-serif;
     font-size: 16px;
@@ -176,15 +176,15 @@ input[type="search"]::-webkit-search-results-decoration {
     top: -15px;
 }
 
-#ingredients {
+#button_ingredients {
     background-color: #3282F7;
 }
 
-#appareils {
+#button_appareils {
     background-color: #68D9A4;
 }
 
-#ustensils {
+#button_ustensils {
     background-color: #ED6454;
 }
 
@@ -207,17 +207,18 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .menu_li {
     display: flex;
-    flex-basis: 170px;
+    flex-basis: 180px;
     margin: 10px 5px 10px 5px;
+    line-height: 1.2em;
+    cursor: pointer;
 }
 
 .menu_open {
     display: flex;
     opacity: 1;
     flex-wrap: wrap;
-    gap: 30px;
-    width: 667px;
-    height: 398px;
+    width: 600px;
+    height: 280px;
     overflow: scroll;
 }
 
@@ -232,19 +233,30 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .dropdown_search {
-    width: 223px;
-    height: 97px;
+    width: 600px;
+    height: 69px;
     border-radius: 5px;
     border: none;
     outline: none;
     position: relative;
-    margin-top: -70px;
+    margin-top: -370px;
     margin-right: 15px;
 }
 
 input.dropdown_search {
     color: white;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: lato;
+    font-size: 16px;
+}
+
+.arrow_dropdown {
+    position: relative;
+    cursor: pointer;
+    top: -340px;
+    right: 55px;
+    transform: rotate(180deg);
+    cursor: pointer;
 }
 
 #dropdown_ingredients {
@@ -253,12 +265,28 @@ input.dropdown_search {
 
 #dropdown_appareils {
     background-color: #68D9A4;
-   margin-left: 172px;
+   margin-left: 211px;
 }
 
 #dropdown_ustensils {
     background-color: #ED6454;
-    margin-left: 340px;
+    margin-left: 422px;
+}
+
+.hidden_dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    .dropdown_search::placeholder {
+        font-size: 12px;
+    }
+    .menu_open {
+        width: auto;
+    }
+    .dropdown_search {
+        width: 211px;
+    }
 }
 
 /* Section */

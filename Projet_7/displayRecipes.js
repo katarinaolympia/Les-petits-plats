@@ -8,7 +8,7 @@ function displayRecipes(recipesArray) {
         html += `
         <div class="recipe_card">
                     <a href="">
-                        <img class="recipe_image" src="" alt="${recipes.name}">
+                        <img class="recipe_image" src="../picture_petits_plats.jpg" alt="${recipes.name}">
                         <h2 id="recipes_name">${recipes.name}</h2>
                         <span class="title_aside">
                             <svg class="clock_icon" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -16,17 +16,85 @@ const searchEvent = searchInput.addEventListener("input", (e) => {
 
 // Dropdowns : événement d'appel
 
-const dropdowns = document.querySelectorAll(".dropdown")
+// const dropdowns = document.querySelectorAll(".dropdown")
 
-dropdowns.forEach(dropdown => {
-    const select = dropdown.querySelector(".select")
-    const arrow = dropdown.querySelector(".arrow")
-    const menu = dropdown.querySelector(".menu")
-    const options = dropdown.querySelector(".menu_li")
+// dropdowns.forEach(dropdown => {
+//     const select = dropdown.querySelector(".select")
+//     const menu = dropdown.querySelector(".menu")
     
-    select.addEventListener("click", () => {
-        arrow.classList.toggle("arrow_rotate")
-        menu.classList.toggle("menu_open")
-        dropdown.style.marginRight = "40px"
-    })
+//     select.addEventListener("click", () => {
+//         menu.classList.toggle("menu_open")
+       
+//     })
+// })
+
+const ingredientsDropdown = document.querySelector("#select_ingredients")
+ingredientsDropdown.addEventListener("click",() => {
+    const inputDropdown = document.querySelector("#dropdown_ingredients")
+    const arrow = document.querySelector("#arrow_dropdown_ingredients")
+    const menu = document.querySelector("#menu_ingredients")
+    const nextButton = document.querySelector("#button_appareils")
+
+    inputDropdown.style.display = "block"
+    arrow.style.display = "block"
+    menu.classList.toggle("menu_open")
+    nextButton.classList.add("modify_position")
+})
+
+const ingredientsArrow = document.querySelector("#arrow_dropdown_ingredients")
+ingredientsArrow.addEventListener("click", () => {
+    const inputDropdown = document.querySelector("#dropdown_ingredients")
+    const menu = document.querySelector("#menu_ingredients")
+    const nextButton = document.querySelector("#button_appareils")
+
+    inputDropdown.style.display = "none"
+    ingredientsArrow.style.display = "none"
+    menu.classList.toggle("menu_open")
+    nextButton.classList.remove("modify_position")
+})
+
+const appareilsDropdown = document.querySelector("#select_appareils")
+appareilsDropdown.addEventListener("click",() => {
+    const inputDropdown = document.querySelector("#dropdown_appareils")
+    const arrow = document.querySelector("#arrow_dropdown_appareils")
+    const menu = document.querySelector("#menu_appareils")
+    const nextButton = document.querySelector("#button_ustensils")
+
+    inputDropdown.style.display = "block"
+    arrow.style.display = "block"
+    menu.classList.toggle("menu_open")
+    nextButton.classList.add("modify_position")
+})
+
+const appareilsArrow = document.querySelector("#arrow_dropdown_appareils")
+appareilsArrow.addEventListener("click", () => {
+    const inputDropdown = document.querySelector("#dropdown_appareils")
+    const menu = document.querySelector("#menu_appareils")
+    const nextButton = document.querySelector("#button_ustensils")
+
+    inputDropdown.style.display = "none"
+    appareilsArrow.style.display = "none"
+    menu.classList.toggle("menu_open")
+    nextButton.classList.remove("modify_position")
+})
+
+const ustensilsDropdown = document.querySelector("#select_ustensils")
+ustensilsDropdown.addEventListener("click",() => {
+    const inputDropdown = document.querySelector("#dropdown_ustensils")
+    const arrow = document.querySelector("#arrow_dropdown_ustensils")
+    const menu = document.querySelector("#menu_ustensils")
+
+    inputDropdown.style.display = "block"
+    arrow.style.display = "block"
+    menu.classList.toggle("menu_open")
+})
+
+const ustensilsArrow = document.querySelector("#arrow_dropdown_ustensils")
+ustensilsArrow.addEventListener("click", () => {
+    const inputDropdown = document.querySelector("#dropdown_ustensils")
+    const menu = document.querySelector("#menu_ustensils")
+
+    inputDropdown.style.display = "none"
+    appareilsArrow.style.display = "none"
+    menu.classList.toggle("menu_open")
 })
