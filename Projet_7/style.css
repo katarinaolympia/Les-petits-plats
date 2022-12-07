@@ -176,6 +176,11 @@ input[type="search"]::-webkit-search-results-decoration {
     top: -15px;
 }
 
+.arrow_initial_position {
+    position: relative;
+    top: -15px;
+}
+
 #button_ingredients {
     background-color: #3282F7;
 }
@@ -226,6 +231,10 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-left: 40px;
 }
 
+.modify_position_menu_open {
+    top: 60px;
+}
+
 /* Dropdown hidden tools */
 
 .dropdown_search_container {
@@ -239,8 +248,10 @@ input[type="search"]::-webkit-search-results-decoration {
     border: none;
     outline: none;
     position: relative;
-    margin-top: -370px;
+    margin-top: -301px;
     margin-right: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 input.dropdown_search {
@@ -253,7 +264,7 @@ input.dropdown_search {
 .arrow_dropdown {
     position: relative;
     cursor: pointer;
-    top: -340px;
+    top: -270px;
     right: 55px;
     transform: rotate(180deg);
     cursor: pointer;
@@ -265,12 +276,12 @@ input.dropdown_search {
 
 #dropdown_appareils {
     background-color: #68D9A4;
-   margin-left: 211px;
+   margin-left: 213px;
 }
 
 #dropdown_ustensils {
     background-color: #ED6454;
-    margin-left: 422px;
+    margin-left: 426px;
 }
 
 .hidden_dropdown {
