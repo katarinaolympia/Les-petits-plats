@@ -16,106 +16,107 @@ const searchEvent = searchInput.addEventListener("input", (e) => {
 
 // Dropdowns : événement d'appel
 
-const ingredientsDropdown = document.querySelector("#select_ingredients")
-ingredientsDropdown.addEventListener("click",() => {
-    const inputDropdown = document.querySelector("#dropdown_ingredients")
-    const arrow = document.querySelector("#arrow_dropdown_ingredients")
-    const menu = document.querySelector("#menu_ingredients")
-    const nextButton = document.querySelector("#button_appareils")
-    const ustensilsArrow = document.querySelector("#arrow_dropdown_ustensils")
-    const buttonArrow = document.querySelector("#arrow_button_ingredient")
+const ingredientsSelect = document.querySelector("#select_ingredients")
+ingredientsSelect.addEventListener("click",() => {
+    const inputDropdownIngredients = document.querySelector("#dropdown_ingredients")
+    const arrowIngredients = document.querySelector("#arrow_dropdown_ingredients")
+    const arrowSelectIngredients = document.querySelector("#arrow_button_ingredient")
+    const menuIngredients = document.querySelector("#menu_ingredients")
     const recipeContainer = document.querySelector(".recipe_container")
+    const appareilsSelect = document.querySelector("#select_appareils")
 
-    ingredientsDropdown.style.display = "none"
-    buttonArrow.classList.add("hidden")
-    inputDropdown.style.display = "block"
-    arrow.style.display = "block"
-    menu.classList.toggle("menu_open")
-    menu.classList.add("modify_position_menu_open")
-    nextButton.classList.add("modify_position")
-    ustensilsArrow.style.display = "none"
-    recipeContainer.style.marginTop = "100px"
+    ingredientsSelect.style.display = "none"
+    arrowSelectIngredients.style.display = "none"
+    inputDropdownIngredients.style.display = "block"
+    arrowIngredients.style.display = "block"
+    menuIngredients.classList.toggle("menu_open")
+    menuIngredients.style.backgroundColor = "#3282F7"
+    menuIngredients.classList.add("modify_position_menu_open")
+    recipeContainer.style.marginTop = "80px"
 })
 
-const ingredientsArrow = document.querySelector("#arrow_dropdown_ingredients")
-ingredientsArrow.addEventListener("click", () => {
-    const inputDropdown = document.querySelector("#dropdown_ingredients")
-    const menu = document.querySelector("#menu_ingredients")
-    const nextButton = document.querySelector("#button_appareils")
+const ingredientsSelectArrow = document.querySelector("#arrow_dropdown_ingredients")
+ingredientsSelectArrow.addEventListener("click", () => {
+    const inputDropdownIngredients = document.querySelector("#dropdown_ingredients")
     const ingredientsDropdown = document.querySelector("#select_ingredients")
-    const buttonArrow = document.querySelector("#arrow_button_ingredient")
+    const menuIngredients = document.querySelector("#menu_ingredients")
+    const arrowSelectIngredients = document.querySelector("#arrow_button_ingredient")
 
     ingredientsDropdown.style.display = "block"
-    buttonArrow.classList.remove("hidden")
-    buttonArrow.classList.add("arrow_initial_position")
-    inputDropdown.style.display = "none"
-    ingredientsArrow.style.display = "none"
-    menu.classList.toggle("menu_open")
-    nextButton.classList.remove("modify_position")
+    arrowSelectIngredients.style.display = "block"
+    arrowSelectIngredients.classList.add("arrow_initial_position")
+    inputDropdownIngredients.style.display = "none"
+    ingredientsSelectArrow.style.display = "none"
+    menuIngredients.classList.toggle("menu_open")
+    menuIngredients.classList.remove("modify_position_menu_open")
 })
 
-const appareilsDropdown = document.querySelector("#select_appareils")
-appareilsDropdown.addEventListener("click",() => {
-    const inputDropdown = document.querySelector("#dropdown_appareils")
-    const arrow = document.querySelector("#arrow_dropdown_appareils")
-    const menu = document.querySelector("#menu_appareils")
-    const nextButton = document.querySelector("#button_ustensils")
-    const buttonArrow = document.querySelector("#arrow_button_appareils")
-    const ustensilsArrow = document.querySelector("#arrow_dropdown_ustensils")
-
-    appareilsDropdown.style.display = "none"
-    buttonArrow.classList.add("hidden")
-    inputDropdown.style.display = "block"
-    arrow.style.display = "block"
-    menu.classList.toggle("menu_open")
-    menu.classList.add("modify_position_menu_open")
-    nextButton.classList.add("modify_position")
-    ustensilsArrow.style.display = "none"
+const appareilsSelect = document.querySelector("#select_appareils")
+appareilsSelect.addEventListener("click",() => {
+    const inputDropdownAppareils = document.querySelector("#dropdown_appareils")
+    const arrowInputAppareils = document.querySelector("#arrow_dropdown_appareils")
+    const arrowSelectAppareils = document.querySelector("#arrow_button_appareils")
+    const menuAppareils = document.querySelector("#menu_appareils")
+    const recipeContainer = document.querySelector(".recipe_container")
+    
+    appareilsSelect.style.display = "none"
+    arrowSelectAppareils.style.display = "none"
+    inputDropdownAppareils.style.display = "block"
+    arrowInputAppareils.style.display = "block"
+    menuAppareils.classList.toggle("menu_open")
+    menuAppareils.style.backgroundColor = "#68D9A4"
+    menuAppareils.classList.add("modify_position_menu_open")
+    recipeContainer.style.marginTop = "80px"
+    
 })
 
-const appareilsArrow = document.querySelector("#arrow_dropdown_appareils")
-appareilsArrow.addEventListener("click", () => {
-    const inputDropdown = document.querySelector("#dropdown_appareils")
-    const menu = document.querySelector("#menu_appareils")
-    const nextButton = document.querySelector("#button_ustensils")
-    const appareilsDropdown = document.querySelector("#select_appareils")
-    const buttonArrow = document.querySelector("#arrow_button_appareils")
+const appareilsSelectArrow = document.querySelector("#arrow_dropdown_appareils")
+appareilsSelectArrow.addEventListener("click", () => {
+    const inputDropdownAppareils = document.querySelector("#dropdown_appareils")
+    const arrowInputAppareils = document.querySelector("#arrow_dropdown_appareils")
+    const appareilsSelect = document.querySelector("#select_appareils")
+    const arrowSelectAppareils = document.querySelector("#arrow_button_appareils")
+    const menuAppareils = document.querySelector("#menu_appareils")
 
-    appareilsDropdown.style.display = "block"
-    buttonArrow.classList.remove("hidden")
-    buttonArrow.classList.add("arrow_initial_position")
-    inputDropdown.style.display = "none"
-    appareilsArrow.style.display = "none"
-    menu.classList.toggle("menu_open")
-    nextButton.classList.remove("modify_position")
+    appareilsSelect.style.display = "block"
+    arrowSelectAppareils.style.display = "block"
+    arrowSelectAppareils.classList.add("arrow_initial_position")
+    inputDropdownAppareils.style.display = "none"
+    arrowInputAppareils.style.display = "none"
+    menuAppareils.classList.toggle("menu_open")
+    menuAppareils.classList.remove("modify_position_menu_open")
 })
 
-const ustensilsDropdown = document.querySelector("#select_ustensils")
-ustensilsDropdown.addEventListener("click",() => {
-    const inputDropdown = document.querySelector("#dropdown_ustensils")
-    const arrow = document.querySelector("#arrow_dropdown_ustensils")
-    const menu = document.querySelector("#menu_ustensils")
-    const buttonArrow = document.querySelector("#arrow_button_ustensils")
+const ustensilsSelect = document.querySelector("#select_ustensils")
+ustensilsSelect.addEventListener("click",() => {
+    const inputDropdownUstensils = document.querySelector("#dropdown_ustensils")
+    const arrowInputUstensils = document.querySelector("#arrow_dropdown_ustensils")
+    const menuUstensils = document.querySelector("#menu_ustensils")
+    const arrowSelectUstensils = document.querySelector("#arrow_button_ustensils")
+    const recipeContainer = document.querySelector(".recipe_container")
 
-    ustensilsDropdown.style.display = "none"
-    buttonArrow.classList.add("hidden")
-    inputDropdown.style.display = "block"
-    arrow.style.display = "block"
-    menu.classList.toggle("menu_open")
-    menu.classList.add("modify_position_menu_open")
+    ustensilsSelect.style.display = "none"
+    arrowSelectUstensils.style.display = "none"
+    inputDropdownUstensils.style.display = "block"
+    arrowInputUstensils.style.display = "block"
+    menuUstensils.classList.toggle("menu_open")
+    menuUstensils.style.backgroundColor = "#ED6454"
+    menuUstensils.classList.add("modify_position_menu_open")
+    recipeContainer.style.marginTop = "80px"
 })
 
 const ustensilsArrow = document.querySelector("#arrow_dropdown_ustensils")
 ustensilsArrow.addEventListener("click", () => {
-    const inputDropdown = document.querySelector("#dropdown_ustensils")
-    const menu = document.querySelector("#menu_ustensils")
-    const ustensilsDropdown = document.querySelector("#select_ustensils")
-    const buttonArrow = document.querySelector("#arrow_button_ustensils")
+    const inputDropdownUstensils = document.querySelector("#dropdown_ustensils")
+    const arrowInputUstensils = document.querySelector("#arrow_dropdown_ustensils")
+    const menuUstensils = document.querySelector("#menu_ustensils")
+    const ustensilsSelect = document.querySelector("#select_ustensils")
+    const arrowSelectUstensils = document.querySelector("#arrow_button_ustensils")
 
-    ustensilsDropdown.style.display = "block"
-    buttonArrow.classList.remove("hidden")
-    buttonArrow.classList.add("arrow_initial_position")
-    inputDropdown.style.display = "none"
-    appareilsArrow.style.display = "none"
-    menu.classList.toggle("menu_open")
+    ustensilsSelect.style.display = "block"
+    arrowSelectUstensils.style.display = "block"
+    arrowSelectUstensils.classList.add("arrow_initial_position")
+    inputDropdownUstensils.style.display = "none"
+    arrowInputUstensils.style.display = "none"
+    menuUstensils.classList.toggle("menu_open")
 })

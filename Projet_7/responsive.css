@@ -1,0 +1,15 @@
+@media screen and (max-width: 680px) {
+    .dropdown_search::placeholder {
+        font-size: 12px;
+    }
+    .menu_open {
+        width: auto;
+    }
+    .dropdown_search {
+        width: 211px;
+    }
+}
+
+@media screen and (max-width:850px) and (min-width:680px) {
+    
+}

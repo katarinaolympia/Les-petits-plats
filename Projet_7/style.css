@@ -19,7 +19,7 @@ body {
 .bloc_page {
     width: 100%;
     margin: 0 auto;
-    padding: 15px 100px 15px 100px;
+    padding: 15px 80px 15px 80px;
 }
 
 a:link, a:visited, a:active {
@@ -27,7 +27,12 @@ a:link, a:visited, a:active {
     color: black;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Main */
+
 #logo {
     margin-top: 10px;
     color: #D04F4F;
@@ -89,19 +94,19 @@ input[type="search"]::-webkit-search-results-decoration {
     opacity: 1;
   }
 
-/* Search hidden tools */
+/* Widgets */
 
-.search_tools {
+.widgets_container {
     display: flex;
     margin-top: 15px;
     gap: 20px;
 }
 
-.search_tool {
+.widget {
     width: max-content;
     height: 50px;
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
     color: white;
     border: none;
@@ -116,21 +121,19 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
 }
 
-.ingredient_tool {
+.ingredient_widget {
     background-color: #3282F7;
 }
 
-.appareil_tool {
+.appliance_widget {
     background-color: #68D9A4;
 }
 
-.ustensil_tool {
+.ustensil_widget {
     background-color: #ED6454;
 }
 
-.hidden {
-    display: none;
-}
+
 
 /* Select buttons */
 
@@ -176,11 +179,6 @@ input[type="search"]::-webkit-search-results-decoration {
     top: -15px;
 }
 
-.arrow_initial_position {
-    position: relative;
-    top: -15px;
-}
-
 #button_ingredients {
     background-color: #3282F7;
 }
@@ -197,9 +195,9 @@ input[type="search"]::-webkit-search-results-decoration {
     list-style: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 100%;
+    /* width: 600px; */
     position: relative;
-    top: -12px;
+ 
     opacity: 0;
     display: none;
     color: white;
@@ -225,33 +223,36 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 600px;
     height: 280px;
     overflow: scroll;
-}
-
-.modify_position {
-    margin-left: 40px;
+    margin-right: 25px;
+    margin-top: -14px;
 }
 
 .modify_position_menu_open {
-    top: 60px;
+    top: 0px;
 }
 
-/* Dropdown hidden tools */
+.arrow_initial_position {
+    position: relative;
+    top: -53px;
+    right: -165px;
+}
+
+
+/* Dropdown Input - hidden tools */
 
 .dropdown_search_container {
     display: flex;
 }
 
 .dropdown_search {
-    width: 600px;
+    width: 600px !important;
     height: 69px;
-    border-radius: 5px;
     border: none;
     outline: none;
-    position: relative;
-    margin-top: -301px;
-    margin-right: 15px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-radius: 5px;
+    position: relative;
 }
 
 input.dropdown_search {
@@ -262,10 +263,6 @@ input.dropdown_search {
 }
 
 .arrow_dropdown {
-    position: relative;
-    cursor: pointer;
-    top: -270px;
-    right: 55px;
     transform: rotate(180deg);
     cursor: pointer;
 }
@@ -274,30 +271,31 @@ input.dropdown_search {
     background-color: #3282F7;
 }
 
+#arrow_dropdown_ingredients {
+    position: relative;
+    top: -35px;
+    left: 545px;
+}
+
 #dropdown_appareils {
     background-color: #68D9A4;
-   margin-left: 213px;
+    right: 0px;
+}
+
+#arrow_dropdown_appareils {
+    position: relative;
+    top: -35px;
+    left: 545px;
 }
 
 #dropdown_ustensils {
     background-color: #ED6454;
-    margin-left: 426px;
 }
 
-.hidden_dropdown {
-    display: none;
-}
-
-@media screen and (max-width: 680px) {
-    .dropdown_search::placeholder {
-        font-size: 12px;
-    }
-    .menu_open {
-        width: auto;
-    }
-    .dropdown_search {
-        width: 211px;
-    }
+#arrow_dropdown_ustensils {
+    position: relative;
+    top: -35px;
+    left: 545px;
 }
 
 /* Section */
@@ -313,7 +311,7 @@ input.dropdown_search {
 .recipe_card {
     display: flex;
     border-radius: 5px;
-    width: 380px;
+    width: 370px;
     background-color: #E7E7E7;
 }
 
