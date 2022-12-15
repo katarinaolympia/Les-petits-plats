@@ -31,8 +31,7 @@ ingredientsSelect.addEventListener("click",() => {
     arrowIngredients.style.display = "block"
     menuIngredients.classList.toggle("menu_open")
     menuIngredients.style.backgroundColor = "#3282F7"
-    menuIngredients.classList.add("modify_position_menu_open")
-    recipeContainer.style.marginTop = "80px"
+    recipeContainer.style.marginTop = "40px"
 })
 
 const ingredientsSelectArrow = document.querySelector("#arrow_dropdown_ingredients")
@@ -48,7 +47,6 @@ ingredientsSelectArrow.addEventListener("click", () => {
     inputDropdownIngredients.style.display = "none"
     ingredientsSelectArrow.style.display = "none"
     menuIngredients.classList.toggle("menu_open")
-    menuIngredients.classList.remove("modify_position_menu_open")
 })
 
 const appareilsSelect = document.querySelector("#select_appareils")
@@ -65,8 +63,7 @@ appareilsSelect.addEventListener("click",() => {
     arrowInputAppareils.style.display = "block"
     menuAppareils.classList.toggle("menu_open")
     menuAppareils.style.backgroundColor = "#68D9A4"
-    menuAppareils.classList.add("modify_position_menu_open")
-    recipeContainer.style.marginTop = "80px"
+    recipeContainer.style.marginTop = "40px"
     
 })
 
@@ -84,7 +81,6 @@ appareilsSelectArrow.addEventListener("click", () => {
     inputDropdownAppareils.style.display = "none"
     arrowInputAppareils.style.display = "none"
     menuAppareils.classList.toggle("menu_open")
-    menuAppareils.classList.remove("modify_position_menu_open")
 })
 
 const ustensilsSelect = document.querySelector("#select_ustensils")
@@ -101,8 +97,7 @@ ustensilsSelect.addEventListener("click",() => {
     arrowInputUstensils.style.display = "block"
     menuUstensils.classList.toggle("menu_open")
     menuUstensils.style.backgroundColor = "#ED6454"
-    menuUstensils.classList.add("modify_position_menu_open")
-    recipeContainer.style.marginTop = "80px"
+    recipeContainer.style.marginTop = "40px"
 })
 
 const ustensilsArrow = document.querySelector("#arrow_dropdown_ustensils")
